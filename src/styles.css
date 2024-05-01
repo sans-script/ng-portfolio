@@ -5,6 +5,6 @@
 @tailwind components;
 @font-face {
     font-family: Determination Sans Web;
-    src: url(/src/fonts/determinationsansweb.ttf);
+    src: url(./assets/determinationsansweb.ttf);
   }
 @tailwind utilities;
