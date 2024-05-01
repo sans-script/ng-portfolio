@@ -66,7 +66,7 @@ export class IframeComponent{
 
         // Coloque o iframe em tela cheia
         if (element.style) {
-            this.scroll = 'yes'
+            element.setAttribute('scrolling', 'yes');
             element.style.width = '100%';
             element.style.height = '100%';
         } else {
