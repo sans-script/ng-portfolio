@@ -18,14 +18,16 @@ export class IframeComponent{
   constructor(private sanitizer: DomSanitizer) { }
 
   @HostListener('document:fullscreenchange')
+  
   onFullScreenChange() {
     if (!document.fullscreenElement) {
       const elements = document.querySelectorAll('iframe');
       const totalElements = elements.length;
       elements.forEach((element: HTMLIFrameElement, index: number) => {
         if (index !== totalElements - 1) {
-          element.style.height = '400px';
           element.setAttribute('scrolling', 'no');
+          element.style.width = '1720px';
+          element.style.height = '800px';
         }
       });
     }
