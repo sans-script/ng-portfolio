@@ -1,0 +1,9 @@
+.bg-logo {
+  background-image: url('./logotipo.png');
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px; 
+  z-index: 9999; 
+}

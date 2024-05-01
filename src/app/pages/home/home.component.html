@@ -1,0 +1,70 @@
+<app-content-window>
+    <div class="flex justify-center w-full h-28 relative">
+        <div class="flex flex-col items-center justify-center absolute w-28 mt-28">
+            <div class="bg-logo absolute"></div>
+            <p class="text-white font-inconsolata absolute z-30 mt-[45px] font-semibold">Alex Sans</p>
+         </div>
+    </div>
+    <app-banner class="z-10 w-full"></app-banner>
+    <app-nav-menu class="w-full"></app-nav-menu>
+    <div class="w-full inset-0 bg-black h-48 z-10"></div>
+    <div class="fixed w-[1px] h-screen bg-white"></div>
+    <div class="flex gap-32 p-4">
+        <app-main-card class="z-10 -mt-36"></app-main-card>
+        <app-cube class="hidden z-10 -mt-40 lg:flex"></app-cube>
+    </div>
+    <div class="pt-28">
+        <p class="flex items-center gap-2 text-white font-inconsolata">
+            <i class="fa-brands fa-spotify text-green-700"></i> Ouvindo:
+        </p>
+        <div class="flex bg-black">
+            <div class="flex border border-1-white h-24 w-[300px] justify-center z-10 bg-black">
+                <img class="z-10"
+                    src="https://spotify-github-profile.vercel.app/api/view.svg?uid=ap0b5ngrzs5bzl771j7gx64dz&redirect=true][https://spotify-github-profile.vercel.app/api/view.svg?uid=ap0b5ngrzs5bzl771j7gx64dz&cover_image=true&theme=novatorem&show_offline=true&background_color=000000&interchange=false&bar_color=ffffff&bar_color_cover=false" />
+            </div>
+        </div>
+    </div>
+    <span class="text-white font-inconsolata mt-10 border border-1-white pl-2 pr-2 bg-black z-10" id="skills">Always Learning</span>
+    <div class="flex flex-col items-center justify-center p-4">
+        <div class="flex flex-wrap items-center justify-center border border-white bg-black z-10 p-4 gap-4">
+            <img src="https://skillicons.dev/icons?i=html&theme=light" />
+            <img src="https://skillicons.dev/icons?i=css&theme=light" />
+            <img src="https://skillicons.dev/icons?i=js&theme=light" />
+            <img src="https://skillicons.dev/icons?i=html&theme=light" />
+            <img src="https://skillicons.dev/icons?i=python&theme=light" />
+            <img src="https://skillicons.dev/icons?i=tailwind&theme=light" />
+            <img src="https://skillicons.dev/icons?i=angular&theme=light" />
+            <img src="https://skillicons.dev/icons?i=nodejs&theme=light" />
+            <img src="https://skillicons.dev/icons?i=git&theme=light" />
+            <img src="https://skillicons.dev/icons?i=vscode&theme=light" />
+            <img src="https://skillicons.dev/icons?i=ubuntu&theme=light" />
+            <img src="https://skillicons.dev/icons?i=windows&theme=light" />
+            <img src="https://skillicons.dev/icons?i=codepen&theme=light" />
+            <img src="https://skillicons.dev/icons?i=github&theme=light" />
+        </div>
+    </div>
+
+    <span class="text-white font-inconsolata mt-10 pl-2 pr-2 border border-1-white bg-black z-10" id="mywork">My Work</span>
+    <app-iframe description="Effect of typing on a terminal." url="https://sans-script.github.io/Typing-Terminal-Effect/" iframeid="iframe1" class="flex flex-col items-center justify-center pt-4 gap-4 w-[80%] bg-black"></app-iframe>
+    <app-iframe description="A web application that provides information about various celestial objects in the Solar System." url="https://sans-script.github.io/solar-system-cards/" iframeid="iframe2" class="flex flex-col items-center justify-center pt-4 gap-4 w-[80%] bg-black"></app-iframe>
+    <app-iframe description="A basic implementation of the parallax effect using HTML and CSS." url="https://sans-script.github.io/paralax-scrolling/" iframeid="iframe3" class="flex flex-col items-center justify-center pt-4 gap-4 w-[80%] bg-black"></app-iframe>
+    <app-iframe description="CSS Grid Layout." url="https://sans-script.github.io/CSS-Grid-Layout/" iframeid="iframe4" class="flex flex-col items-center justify-center pt-4 gap-4 w-[80%] bg-black"></app-iframe>
+    <app-iframe description="CSS Flex Layout." url="https://sans-script.github.io/CSS-Flex-Layout/" iframeid="iframe5" class="flex flex-col items-center justify-center pt-4 gap-4 w-[80%] bg-black"></app-iframe>
+    <app-iframe description="Digital clock AM-PM." url="https://sans-script.github.io/digital-clock-am-pm/" iframeid="iframe7" class="flex flex-col items-center justify-center pt-4 gap-4 w-[80%] bg-black"></app-iframe>
+    <app-iframe description="Undertale text box." url="https://sans-script.github.io/undertale-text-box/" iframeid="iframe8" class="flex flex-col items-center justify-center pt-4 gap-4 w-[80%] bg-black"></app-iframe>
+    <app-iframe description="3D Cube" url="https://sans-script.github.io/3D-Cube/" iframeid="iframe9" class="flex flex-col items-center justify-center pt-4 gap-4 w-[80%] bg-black"></app-iframe>
+    <app-iframe description="IOS Calculator." url="https://sans-script.github.io/IOS-Calculator/" iframeid="iframe10" class="flex flex-col items-center justify-center pt-4 gap-4 w-[80%] bg-black"></app-iframe>
+    
+
+
+    <button class="text-white font-inconsolata mt-4 border border-1-white pl-2 pr-2 bg-black z-10">Clica na
+        e strelinha</button>
+    <div class="flex flex-col items-center justify-center relative w-[80%] p-12 bg-black">
+        <div class="absolute w-12 h-12 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center bg-white z-20 opacity-0 cursor-pointer"
+            (click)="toggleFullScreen('star')"></div>
+        <iframe id="star"
+            class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-black"
+            src="https://sans-script.github.io/undertale-savepoint/" scrolling="no"></iframe>
+    </div>
+<app-footer class="w-full z-10"></app-footer>
+</app-content-window>

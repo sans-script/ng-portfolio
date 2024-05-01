@@ -1,0 +1,32 @@
+.caret{
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+.stop{
+  animation: stop 1.2s infinite;
+}
+
+@keyframes stop {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 1;
+  }
+}

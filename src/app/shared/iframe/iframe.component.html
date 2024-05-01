@@ -1,0 +1,5 @@
+<button (click)="toggleFullScreen(iframeid)" class="text-white font-inconsolata mt-4 border border-1-white pl-2 pr-2 bg-black z-10">
+    Abrir em tela cheia
+</button>
+<iframe  [id]="iframeid" class="border border-2-white z-10 w-full h-[400px] bg-black"  [src]="trustedUrl" [scrolling]="scroll"></iframe>
+<span class="w-full text-white font-inconsolata border border-1-white pl-2 pr-2 bg-black z-20">Description: {{description}}</span>

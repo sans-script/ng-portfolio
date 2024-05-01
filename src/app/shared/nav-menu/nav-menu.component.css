@@ -1,0 +1,88 @@
+.social li a {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .header {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+  }
+  
+  .hamburger {
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    position: fixed;
+    top: 26px;
+    left: 16px;
+    z-index: 9999;
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  .nav {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: -100%; /* Inicialmente posicionado fora da tela na esquerda */
+    transition: left 0.5s ease; /* Animação do deslizamento */
+  }
+  
+  .nav.active {
+    left: 0; /* Desliza o menu para dentro da tela */
+  }
+  
+  .nav-list {
+    margin: 0;
+    background: #000;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .nav-list a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .nav.active .hamburger {
+    position: fixed;
+    top: 26px;
+    border-top-color: transparent;
+  }
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+  
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+  
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
