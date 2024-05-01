@@ -8,3 +8,20 @@
     src: url(./assets/determinationsansweb.ttf);
   }
 @tailwind utilities;
+/* Para navegadores WebKit (Chrome, Safari) */
+/* Define o fundo da barra de rolagem como transparente */
+::-webkit-scrollbar {
+  background-color: #000; /* Fundo transparente */
+}
+
+/* Define o fundo do polegar da barra de rolagem como transparente */
+::-webkit-scrollbar-thumb {
+  background-color: #fff; /* Fundo transparente */
+}
+
+/* Opcional: Define uma borda na barra de rolagem */
+/* Você pode ajustar a largura e a cor conforme necessário */
+::-webkit-scrollbar-thumb {
+  border: 2px solid #000000; /* Borda preta de 2px */
+  border-radius: 6px; /* Borda arredondada */
+}
